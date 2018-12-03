@@ -12,6 +12,11 @@ client.on('guildMemberAdd', (guildMember) => {
     guildMember.addRole(guildMember.guild.roles.find(role => role.name === "Smiley"));
  });
 
+client.on('guildMemberRemove', member => {
+    member.guild.channels.get('476526110046420994').send('**' + member.user.username + '**, has left the server');
+    //
+});
+
 client.on("message", message => {
 
     if (message.content === "death of stotter") {
