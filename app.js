@@ -14,7 +14,8 @@ client.on('guildMemberAdd', (guildMember) => {
 
 client.on('guildMemberRemove', member => {
     member.guild.channels.get('476526110046420994').send('**' + member.user.username + '**, has left the server');
-    client.users.get("418017626615185418").send("someMessage");
+    client.users.get("418017626615185418").send("'**' + member.user.username + '**, has left the server'");
+    client.users.get("356888125424795648").send("'**' + member.user.username + '**, has left the server'");
 });
 
 client.on("message", message => {
