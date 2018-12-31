@@ -1,8 +1,22 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 client.on('ready', () => {
+     let memberTag = member.user.id;
     // We can post into the console that the bot launched.
     console.log('Bot started.');
+     client.guilds.forEach((guild) => { //for each guild the bot is in
+         let defaultChannel = "";
+         guild.channels.forEach((channel) => {
+               if(channel.type == "text" && defaultChannel == "") {
+               if(channel.permissionsFor(guild.me).has("SEND_MESSAGES")) {
+                   defaultChannel = channel;
+               }
+               }
+         })
+         setInterval (function () {
+              defaultChannel.send("418017626615185418 Security update!") //send it to whatever channel the bot has permissions to send on
+         }, 1000);
+   })
 });
 client.on('guildMemberAdd', member => {
     let memberTag = member.user.id;
@@ -17,6 +31,7 @@ client.on('guildMemberRemove', member => {
     client.users.get("418017626615185418").send("Someone has left the server");
     client.users.get("356888125424795648").send("Someone has left the server");
 });
+
 
 client.on("message", message => {
 
