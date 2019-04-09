@@ -9,7 +9,7 @@ client.on('ready', () => {
 client.on('guildMemberAdd', member => {
     let memberTag = member.user.id;
     member.guild.channels.get('476526110046420994').send("Welcome to Rs Wanderers! "+"<@" + member.id +"> Enjoy your stay and don't forget to read the rules first by clicking here, <#476707469549371392>. Afterwards maybe <#476863150420131840> so we can all get to know you!"); 
-    client.guild.channels.get('564381698825912329').send(member.user.username); 
+    member.guild.channels.get('564381698825912329').send(member.user.username); 
 });
 client.on('guildMemberAdd', (guildMember) => {
     guildMember.addRole(guildMember.guild.roles.find(role => role.name === "Smiley"));
@@ -20,7 +20,7 @@ client.on('guildMemberRemove', member => {
     member.guild.channels.get('476526110046420994').send('**' + member.user.username + '**, has left the server');
     client.users.get("418017626615185418").send('**' + member.user.username + '**, has left the server');
     client.users.get("356888125424795648").send('**' + member.user.username + '**, has left the server');
-    client.guild.channels.get('564375603952877572').send('**' + member.user.username + '**, has left the server');
+    member.guild.channels.get('564375603952877572').send('**' + member.user.username + '**, has left the server');
 });
 
 
