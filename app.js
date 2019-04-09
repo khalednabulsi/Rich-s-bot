@@ -33,7 +33,7 @@ client.on("message", message => {
             files: ["https://i.gyazo.com/0260cd25bde1283951425b54e04844c5.png"]
         });
     }
-        if (message.content === "stotter" ) {
+        if (message.content.includes("stotter") ) {
 
         message.channel.send( {
             files: ["https://coubsecure-s.akamaihd.net/get/b72/p/coub/simple/cw_timeline_pic/5bd1cec5b69/86995561338790c873d50/med_1463723790_image.jpg"]
