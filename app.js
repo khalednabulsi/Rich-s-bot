@@ -32,7 +32,7 @@ client.on("message", message => {
         message.channel.send("HUMILIATION!!", {
             files: [
                 "https://i.gyazo.com/0260cd25bde1283951425b54e04844c5.png",
-                "./humiliation.mp3"
+                "https://raw.githubusercontent.com/khalednabulsi/Rich-s-bot/master/humiliation.mp3"
             ]
         });
     }
