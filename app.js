@@ -42,6 +42,9 @@ client.on("message", message => {
             files: ["https://coubsecure-s.akamaihd.net/get/b72/p/coub/simple/cw_timeline_pic/5bd1cec5b69/86995561338790c873d50/med_1463723790_image.jpg"]
         });
     }
+    if (message.content === `server`) {
+	message.channel.send(`Server name: ${message.guild.name}\nTotal members: ${message.guild.memberCount}`);
+}
     
     if (message.content === "are you online?") {
 
