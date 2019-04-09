@@ -30,7 +30,10 @@ client.on("message", message => {
 
   
         message.channel.send("HUMILIATION!!", {
-            files: ["https://i.gyazo.com/0260cd25bde1283951425b54e04844c5.png"]
+            files: [
+                "https://i.gyazo.com/0260cd25bde1283951425b54e04844c5.png",
+                "./humiliation.mp3"
+            ]
         });
     }
         if (message.content.includes("stotter") ) {
