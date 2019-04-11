@@ -26,6 +26,16 @@ client.on('guildMemberRemove', member => {
 
 client.on("message", message => {
 
+	
+	    if(message.content == `captain-list`) {
+        const ListEmbed = new Discord.RichEmbed()
+            .setTitle('Users with the captain role:')
+            .setDescription(message.guild.roles.get('476543294743248897').members.map(m=>m.user.tag).join('\n'));
+        message.channel.send(ListEmbed);                    
+    }
+});
+	
+	
     if (message.content === "death of stotter") {
 
   
