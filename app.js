@@ -24,6 +24,16 @@ client.on('guildMemberRemove', member => {
 
 });
 
+client.on("message", msg => {
+    if (msg.content.toLowerCase().startsWith("clearchat")) {
+        async function clear() {
+            msg.delete();
+            const fetched = await msg.channel.fetchMessages({limit: 10});
+            msg.channel.bulkDelete(fetched);
+        }
+        clear();
+    }
+});
 
 client.on("message", message => {
 
