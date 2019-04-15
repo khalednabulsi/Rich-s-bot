@@ -9,7 +9,7 @@ client.on('ready', () => {
 });
 client.on('guildMemberAdd', member => {
     let memberTag = member.user.id;
-    member.guild.channels.get('476526110046420994').send("Welcome to Rs Wanderers! " + "<@" + member.id + "> Enjoy your stay and don't forget to read the rules first by clicking here, <#476707469549371392>. Afterwards maybe <#476863150420131840> so we can all get to know you!");
+    member.guild.channels.get('476526110046420994').send("Welcome to Rs Wanderers! " + "<@" + member.id + "> Enjoy your stay and don't forget to read the rules first by clicking here, <#476707469549371392> and if you have two or more account please add them here <#564859524826136615>. Afterwards maybe <#476863150420131840> so we can all get to know you!");
     client.guilds.get('564375603952877568').channels.get('564375895645618176').send(member.user.username);
 });
 client.on('guildMemberAdd', (guildMember) => {
