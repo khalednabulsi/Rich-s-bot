@@ -73,6 +73,14 @@ client.on("message", message => {
             ]
         });
     }
+    
+        if (message.content.includes("thijs")) {
+
+        message.channel.send({
+            files: ["https://www.healthline.com/hlcmsresource/images/imce/albinism_thumb.jpg"]
+        });
+    }
+    
     if (message.content.includes("tace")) {
 
         message.channel.send({
