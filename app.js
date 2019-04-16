@@ -76,9 +76,17 @@ client.on("message", message => {
     if (message.content.includes("tace")) {
 
         message.channel.send({
-            files: ["https://coubsecure-s.akamaihd.net/get/b72/p/coub/simple/cw_timeline_pic/5bd1cec5b69/86995561338790c873d50/med_1463723790_image.jpg"]
+            files: ["./tace.jpg"]
         });
     }
+    
+        if (message.content.includes("stotter")) {
+
+        message.channel.send({
+            files: ["./tace.jpg"]
+        });
+    }
+    
     if (message.content === `!server`) {
         message.channel.send(`Server name: ${message.guild.name}\nTotal members: ${message.guild.memberCount}`);
     }
