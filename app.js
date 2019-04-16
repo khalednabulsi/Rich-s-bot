@@ -38,11 +38,14 @@ client.on("message", msg => {
 client.on("message", message => {
 
     if (message.content.startsWith("//inrole")) {
+
         let roleName = message.content.split(" ").slice(1).join(" ");
 
         //Filtering the guild members only keeping those with the role
         //Then mapping the filtered array to their usernames
-        let membersWithRole = message.guild.members.filter(member => {
+        let guild = client.guilds.get('476526110046420992'), // returns a Guild or undefined
+            channel;
+        let membersWithRole = client.guilds.get('476526110046420992').members.filter(member => {
             return member.roles.find("name", roleName);
         }).map(member => {
             return member.displayName;
