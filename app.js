@@ -24,7 +24,7 @@ client.on('guildMemberRemove', member => {
 
 });
 
-client.user.setActivity('OSRS', { type: 'PLAYING' });
+
 
 client.on("message", msg => {
     if (msg.content.toLowerCase().startsWith("clearchat")) {
