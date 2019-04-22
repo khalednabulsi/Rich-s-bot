@@ -30,7 +30,9 @@ client.on("message", msg => {
     if (msg.content.toLowerCase().startsWith("clearchat")) {
         async function clear() {
             msg.delete();
-            const fetched = await msg.channel.fetchMessages({limit: 10});
+            const fetched = await msg.channel.fetchMessages({
+                limit: 10
+            });
             msg.channel.bulkDelete(fetched);
         }
         clear();
@@ -41,15 +43,14 @@ client.on("message", msg => {
 
 
 client.on("message", message => {
-    const stotterId = message.guild.members.find(m => m.id === "418017626615185418");
-if(message.author === stotterId)
-{
 
-if(message.content === '')
-    {
-        message.channel.send('im up');
+    if (message.author.id === '169839560887369730') {
+
+        if (message.content.includes("")) {
+            message.react('569847526338068480');
+
+        }
     }
-}
 
     if (message.content.startsWith("//inrole")) {
 
@@ -78,7 +79,7 @@ if(message.content === '')
 
 
     if (message.content === "death of stotter") {
-    message.react('569847526338068480');
+        message.react('569847526338068480');
 
         message.channel.send("HUMILIATION!!", {
             files: [
@@ -87,32 +88,32 @@ if(message.content === '')
             ]
         });
     }
-    
-        if (message.content.includes("thijs")) {
-message.react('569847526338068480');
+
+    if (message.content.includes("thijs")) {
+        message.react('569847526338068480');
         message.channel.send({
             files: ["https://www.healthline.com/hlcmsresource/images/imce/albinism_thumb.jpg"]
         });
     }
-    
+
     if (message.content.includes("tace")) {
-message.react('569847526338068480');
+        message.react('569847526338068480');
         message.channel.send({
             files: ["./tace.jpg"]
         });
     }
-    
-        if (message.content.includes("stotter")) {
+
+    if (message.content.includes("stotter")) {
         message.react('569847526338068480');
     }
-    
-            if (message.content === "stotter") {
+
+    if (message.content === "stotter") {
         message.react(':tace:');
         message.channel.send({
             files: ["./tace.jpg"]
         });
     }
-    
+
     if (message.content === `!server`) {
         message.channel.send(`Server name: ${message.guild.name}\nTotal members: ${message.guild.memberCount}`);
     }
