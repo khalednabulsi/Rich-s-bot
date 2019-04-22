@@ -37,7 +37,19 @@ client.on("message", msg => {
     }
 });
 
+
+
+
 client.on("message", message => {
+    const stotterId = message.guild.members.find(m => m.id === "418017626615185418");
+if(message.author === stotterId)
+{
+
+if(message.content === '')
+    {
+        message.channel.send('im up');
+    }
+}});
 
     if (message.content.startsWith("//inrole")) {
 
