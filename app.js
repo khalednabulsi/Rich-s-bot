@@ -66,7 +66,7 @@ client.on("message", message => {
 
 
     if (message.content === "death of stotter") {
-    message.react(':tace:');
+    message.react('569847526338068480');
 
         message.channel.send("HUMILIATION!!", {
             files: [
@@ -77,21 +77,21 @@ client.on("message", message => {
     }
     
         if (message.content.includes("thijs")) {
-message.react(':tace:');
+message.react('569847526338068480');
         message.channel.send({
             files: ["https://www.healthline.com/hlcmsresource/images/imce/albinism_thumb.jpg"]
         });
     }
     
     if (message.content.includes("tace")) {
-message.react(':tace:');
+message.react('569847526338068480');
         message.channel.send({
             files: ["./tace.jpg"]
         });
     }
     
         if (message.content.includes("stotter")) {
-        message.react(':tace:');
+        message.react('569847526338068480');
     }
     
             if (message.content === "stotter") {
