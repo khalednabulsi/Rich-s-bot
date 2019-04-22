@@ -66,7 +66,7 @@ client.on("message", message => {
 
 
     if (message.content === "death of stotter") {
-
+message.react(':tace:');
 
         message.channel.send("HUMILIATION!!", {
             files: [
@@ -77,7 +77,7 @@ client.on("message", message => {
     }
     
         if (message.content.includes("thijs")) {
-
+message.react(':tace:');
         message.channel.send({
             files: ["https://www.healthline.com/hlcmsresource/images/imce/albinism_thumb.jpg"]
         });
