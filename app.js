@@ -66,7 +66,7 @@ client.on("message", message => {
 
 
     if (message.content === "death of stotter") {
-message.react(':tace:');
+    message.react(':tace:');
 
         message.channel.send("HUMILIATION!!", {
             files: [
@@ -84,14 +84,18 @@ message.react(':tace:');
     }
     
     if (message.content.includes("tace")) {
-
+message.react(':tace:');
         message.channel.send({
             files: ["./tace.jpg"]
         });
     }
     
         if (message.content.includes("stotter")) {
-
+        message.react(':tace:');
+    }
+    
+            if (message.content === "stotter") {
+        message.react(':tace:');
         message.channel.send({
             files: ["./tace.jpg"]
         });
