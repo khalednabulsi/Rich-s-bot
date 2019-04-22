@@ -49,7 +49,7 @@ if(message.content === '')
     {
         message.channel.send('im up');
     }
-}});
+}
 
     if (message.content.startsWith("//inrole")) {
 
