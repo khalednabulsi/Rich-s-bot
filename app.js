@@ -57,8 +57,8 @@ client.on("message", message => {
         if (message.content.includes("")) {
             message.react('🍼');
 
-        }*/
-    }
+        }
+    }*/
     
 
     if (message.content.startsWith("//inrole")) {
