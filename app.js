@@ -52,12 +52,12 @@ client.on("message", message => {
         }
     }
     
-        if (message.author.id === '369776588469829633') {
+        /*if (message.author.id === '369776588469829633') {
 
         if (message.content.includes("")) {
             message.react('🍼');
 
-        }
+        }*/
     }
     
 
