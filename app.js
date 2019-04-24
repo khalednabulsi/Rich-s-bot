@@ -51,7 +51,7 @@ setInterval(function() {
         }
         
     }
-    }, 3000);
+    }, 6000);
     
         /*if (message.author.id === '369776588469829633') {
 
