@@ -134,7 +134,7 @@ client.on("message", message => {
     }
     if (message.content === "!raids req") {
 
-        message.channel.send("80+ combats stats are recommended depending on the group size you are in would depend your herblore/thieving/con/farming level. If with others this isn't needed, if in small group you would be better with 90 herblore, 60+ con 56+ farming  and higher thieving the better although this isn't a necessity. If you have a look at the <#476540508349661204> it'll show you the best set up you can with your gear, if you need to swap something out just ask :smiley:")
+        message.channel.send("80+ combats stats are recommended depending on the group size you are in, you would struggle until 90+ if you plan to do anything under a 4man raid unless the other people with you are max stats and armour to help out with dps. 78 herblore isn't needed but highly suggested as it will help with points while being able to help your team.. Lower than this herblore level means you cannot 'prep' for the boss find rendering yourself slightly useless for 10 or so minutes. Construction level is only needed from 1 member of the team, the medium chest is more than enough but if you have 90 you can make the large for extra points! The higher the farming level you have again, the more useful you are in 'prep' however again not needed. If you have a look at the #raids-gear-guids it'll show you the best set up you can with your gear, if you need to swap something out just ask.To learn in we recommend using elite void as it means there are less switches for you to master. At the very lease you will need a trident, a tent whip, some type of spec weapon preferably a bgs or dwh and a blow pipe. The rest is pretty interchangeable. Any questions just ask.")
     }
 
 
