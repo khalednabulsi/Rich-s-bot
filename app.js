@@ -43,7 +43,7 @@ client.on("message", msg => {
 
 
 client.on("message", message => {
-setInterval(function() { 
+setTimeout(function(){ 
     if (message.author.id === '169839560887369730') {
 
         if (message.content.includes("")) {
