@@ -43,14 +43,15 @@ client.on("message", msg => {
 
 
 client.on("message", message => {
-
+setInterval(function() { 
     if (message.author.id === '169839560887369730') {
 
         if (message.content.includes("")) {
             message.react('569847526338068480');
-
         }
+        
     }
+    }, 3000);
     
         /*if (message.author.id === '369776588469829633') {
 
