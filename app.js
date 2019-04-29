@@ -53,6 +53,7 @@ setTimeout(function(){
     }
     }, 6000);
     
+    
         /*if (message.author.id === '369776588469829633') {
 
         if (message.content.includes("")) {
@@ -60,6 +61,18 @@ setTimeout(function(){
 
         }
     }*/
+    
+   if (message.author.id === '274026098189139979') {
+        if (message.content.includes("")) {
+            message.react('572331492638851072');
+        }
+    }
+        if (message.content.includes("jule")) {
+        message.react('572331492638851072');
+        message.channel.send({
+            files: ["./julia.jpg"]
+        });
+    }
     
 
     if (message.content.startsWith("//inrole")) {
