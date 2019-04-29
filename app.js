@@ -73,6 +73,12 @@ setTimeout(function(){
             files: ["./julia.jpg"]
         });
     }
+            if (message.content.includes("julia")) {
+        message.react('572331492638851072');
+        message.channel.send({
+            files: ["./julia.jpg"]
+        });
+    }
     
 
     if (message.content.startsWith("//inrole")) {
