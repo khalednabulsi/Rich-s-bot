@@ -26,6 +26,8 @@ client.on('guildMemberRemove', member => {
 
 
 
+
+
 client.on("message", msg => {
     if (msg.content.toLowerCase().startsWith("clearchat")) {
         async function clear() {
