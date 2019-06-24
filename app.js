@@ -131,6 +131,11 @@ setTimeout(function(){
             files: ["./tace.jpg"]
         });
     }
+        if (message.content.includes("ranydino")) {
+        message.channel.send({
+              files: ["./ranydino.jpg"]
+        });
+    }
 
     if (message.content.includes("stotter")) {
         message.react('569847526338068480');
