@@ -10,7 +10,7 @@ client.on('ready', () => {
         'Once you replace negative thoughts with positive ones, you’ll start having positive results.',
         'In order to carry a positive action we must develop here a positive vision.',
         'Positive thinking will let you do everything better than negative thinking will.',
-        '111In every day, there are 1,440 minutes. That means we have 1,440 daily opportunities to make a positive impact.',
+        'In every day, there are 1,440 minutes. That means we have 1,440 daily opportunities to make a positive impact.',
         'Attitude is a little thing that makes a big difference.',
         'Your limitation—it’s only your imagination.',
         'Push yourself, because no one else is going to do it for you.',
@@ -57,7 +57,7 @@ client.on('ready', () => {
         var randomNumber = Math.floor(Math.random() * textArray.length);
         client.channels.get('476526110046420994').send('Positive Vibe:');
         client.channels.get('476526110046420994').send(textArray[randomNumber])
-    }, 1000 * 60 * 60);
+    }, 10000 * 60 * 60);
 
 });
 client.on('guildMemberAdd', member => {
