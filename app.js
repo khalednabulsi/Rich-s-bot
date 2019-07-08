@@ -9,6 +9,8 @@ client.on('ready', () => {
     var textArray = [
         'Once you replace negative thoughts with positive ones, you’ll start having positive results.',
         'In order to carry a positive action we must develop here a positive vision.',
+        'the HIGHER your fucking balls are, the BIGGER your fucking dick looks.',
+        'the more you fucking put in, the more you fucking put out! its that simple you knob',
         'Positive thinking will let you do everything better than negative thinking will.',
         'In every day, there are 1,440 minutes. That means we have 1,440 daily opportunities to make a positive impact.',
         'Attitude is a little thing that makes a big difference.',
