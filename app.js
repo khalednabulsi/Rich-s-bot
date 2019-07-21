@@ -208,7 +208,18 @@ client.on("message", message => {
     if (message.content === `!server`) {
         message.channel.send(`Server name: ${message.guild.name}\nTotal members: ${message.guild.memberCount}`);
     }
+    
+    if (message.content === "joeplz") {
 
+
+        message.channel.send("joe plz");
+          message.channel.send("joe plz");
+          message.channel.send("joe plz");
+          message.channel.send("joe plz");
+          message.channel.send("joe plz");
+          message.channel.send("joe plz");
+    }
+    
     if (message.content === "are you online?") {
 
 
