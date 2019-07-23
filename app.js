@@ -129,6 +129,12 @@ client.on("message", message => {
         message.channel.send({
             files: ["./julia.jpg"]
         });
+        
+            if (message.content === "sweetycorns") {
+        message.react('🌽');
+        message.channel.send({
+            files: ["./corn.jpg"]
+        });
     }
     //             if (message.content.includes("julia")) {
     //         message.react('572331492638851072');
