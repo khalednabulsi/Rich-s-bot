@@ -129,8 +129,8 @@ client.on("message", message => {
         message.channel.send({
             files: ["./julia.jpg"]
         });
-        
-            if (message.content === "sweetycorns") {
+    }
+    if (message.content === "sweetycorns") {
         message.react('🌽');
         message.channel.send({
             files: ["./corn.jpg"]
@@ -214,18 +214,18 @@ client.on("message", message => {
     if (message.content === `!server`) {
         message.channel.send(`Server name: ${message.guild.name}\nTotal members: ${message.guild.memberCount}`);
     }
-    
+
     if (message.content === "joeplz") {
 
 
         message.channel.send("joe plz");
-          message.channel.send("joe plz");
-          message.channel.send("joe plz");
-          message.channel.send("joe plz");
-          message.channel.send("joe plz");
-          message.channel.send("joe plz");
+        message.channel.send("joe plz");
+        message.channel.send("joe plz");
+        message.channel.send("joe plz");
+        message.channel.send("joe plz");
+        message.channel.send("joe plz");
     }
-    
+
     if (message.content === "are you online?") {
 
 
