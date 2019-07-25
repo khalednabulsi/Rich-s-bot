@@ -43,6 +43,7 @@ client.on('ready', () => {
         'What You Lack In Talent Can Be Made Up With Desire, Hustle And Giving 110% All The Time.',
         'Do What You Can With All You Have, Wherever You Are.',
         'You Are Never Too Old To Set Another Goal Or To Dream A New Dream.',
+        'FUCK WORK,FUCK FAMILY,FUCK GIRLFRIENDS,FUCK EVERYTHING, EAT SLEEP GRIND REPEAT'
     ];
     // let scheduledMessage = new cron.CronJob('00 22 14 * * *', () => {
     //     // This runs every day at 10:30:00, you can do anything you want
