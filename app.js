@@ -124,7 +124,7 @@ client.on("message", message => {
     //             message.react('572331492638851072');
     //         }
     //     }
-    if (message.content === "j ule") {
+    if (message.content === "cooldino") {
         message.react('572331492638851072');
         message.channel.send({
             files: ["./julia.jpg"]
