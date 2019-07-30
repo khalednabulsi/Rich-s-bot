@@ -3,7 +3,7 @@ const client = new Discord.Client();
 const cron = require('cron');
 
 client.on('ready', () => {
-
+message.channel.send("Goliath online! lock n' load");
     // We can post into the console that the bot launched.
     console.log('Bot started.');
     var textArray = [
