@@ -3,49 +3,11 @@ const client = new Discord.Client();
 const cron = require('cron');
 
 client.on('ready', () => {
-    client.channels.get('476526110046420994').send("Goliath online! lock n' load");
+
 
     // We can post into the console that the bot launched.
     console.log('Bot started.');
-    var textArray = [
-        'Once you replace negative thoughts with positive ones, you’ll start having positive results.',
-        'In order to carry a positive action we must develop here a positive vision.',
-        'the HIGHER your fucking balls are, the BIGGER your fucking dick looks.',
-        'the more you fucking put in, the more you fucking put out! its that simple you knob',
-        'Positive thinking will let you do everything better than negative thinking will.',
-        'In every day, there are 1,440 minutes. That means we have 1,440 daily opportunities to make a positive impact.',
-        'Attitude is a little thing that makes a big difference.',
-        'Your limitation—it’s only your imagination.',
-        'Push yourself, because no one else is going to do it for you.',
-        'Sometimes later becomes never. Do it now.',
-        'Great things never come from comfort zones.',
-        'Dream it. Wish it. Do it.',
-        'Success doesn’t just find you. You have to go out and get it.',
-        'The harder you work for something, the greater you’ll feel when you achieve it.',
-        'Don’t stop when you’re tired. Stop when you’re done.',
-        'Wake up with determination. Go to bed with satisfaction.',
-        'Do something today that your future self will thank you for.',
-        'Little things make big days.',
-        'Don’t wait for opportunity. Create it.',
-        'Sometimes we’re tested not to show our weaknesses, but to discover our strengths.',
-        'The key to success is to focus on goals, not obstacles.',
-        'Aim for the moon. If you miss, you may hit a star.',
-        'Don’t watch the clock; do what it does. Keep going.',
-        'There will be obstacles. There will be doubters. There will be mistakes. But with hard work, there are no limits.',
-        'One way to keep momentum going is to have constantly greater goals.',
-        'Change your life today. Don’t gamble on the future, act now, without delay.',
-        'Why should you continue going after your dreams? Because seeing the look on the faces of the people who said you couldn’t… will be priceless.',
-        'Don’t Let Yesterday Take Up Too Much Of Today.',
-        'If You Are Working On Something That You Really Care About, You Don’t Have To Be Pushed. The Vision Pulls You.',
-        'Failure Will Never Overtake Me If My Determination To Succeed Is Strong Enough.',
-        'We May Encounter Many Defeats But We Must Not Be Defeated.',
-        'Whether You Think You Can Or Think You Can’t, You’re Right.',
-        'The Man Who Has Confidence In Himself Gains The Confidence Of Others.',
-        'What You Lack In Talent Can Be Made Up With Desire, Hustle And Giving 110% All The Time.',
-        'Do What You Can With All You Have, Wherever You Are.',
-        'You Are Never Too Old To Set Another Goal Or To Dream A New Dream.',
-        'FUCK WORK,FUCK FAMILY,FUCK GIRLFRIENDS,FUCK EVERYTHING, EAT SLEEP GRIND REPEAT'
-    ];
+
     // let scheduledMessage = new cron.CronJob('00 22 14 * * *', () => {
     //     // This runs every day at 10:30:00, you can do anything you want
     //     // let channel = yourGuild.channels.get('id');
