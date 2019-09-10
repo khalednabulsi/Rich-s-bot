@@ -28,7 +28,8 @@ client.on('ready', () => {
 });
 client.on('guildMemberAdd', member => {
     let memberTag = member.user.id;
-    member.guild.channels.get('476526110046420994').send("Welcome to Rs Wanderers! " + "<@" + member.id + ">  Enjoy your stay. <#476707469549371392> - read them and if you have two or more accounts please add them here <#564859524826136615>. Afterwards <#476863150420131840> so we can all get to know you! Mute the channels you don't need to save unwanted notifications & drop a <#476526110046420994> a message if you have what it takes to be in <#609015618426896404>!");
+    member.guild.channels.get('476526110046420994').send("Welcome to Rs Wanderers! " + "<@" + member.id + ">  Enjoy your stay. <#476707469549371392> - read them and if you have two or more accounts p
+                                                         add them here <#564859524826136615>. Afterwards <#476863150420131840> so we can all get to know you! Mute the channels you don't need to save unwanted notifications & drop a <#476526110046420994> a message if you have what it takes to be in <#609015618426896404>!");
     client.guilds.get('564375603952877568').channels.get('564375895645618176').send(member.user.username);
 });
 client.on('guildMemberAdd', (guildMember) => {
@@ -197,7 +198,7 @@ client.on("message", message => {
     }
     if (message.content === "!raids req") {
 
-        message.channel.send("80+ combats stats are recommended depending on the group size you are in, you would struggle until 90+ if you plan to do anything under a 4man raid unless the other people with you are max stats and armour to help out with dps. 78 herblore isn't needed but highly suggested as it will help with points while being able to help your team.. Lower than this herblore level means you cannot 'prep' for the boss find rendering yourself slightly useless for 10 or so minutes. Construction level is only needed from 1 member of the team, the medium chest is more than enough but if you have 90 you can make the large for extra points! The higher the farming level you have again, the more useful you are in 'prep' however again not needed. If you have a look at the #raids-gear-guids it'll show you the best set up you can with your gear, if you need to swap something out just ask.To learn in we recommend using elite void as it means there are less switches for you to master. At the very lease you will need a trident, a tent whip, some type of spec weapon preferably a bgs or dwh and a blow pipe. The rest is pretty interchangeable. Any questions just ask.")
+        message.channel.send("80+ combats stats are recommended depending on the group size you are in, you would struggle until 90+ if you plan to do anything under a 4man raid unless the other people with you are max stats and armour to help out with dps. 78 herblore isn't needed but highly suggested as it will help with points while being able to help your team.. Lower than this herblore level means you cannot 'prep' for the boss find rendering yourself slightly useless for 10 or so minutes. Construction level is only needed from 1 member of the team, the medium chest is more than enough but if you have 90 you can make the large for extra points! The higher the farming level you have again, the more useful you are in 'prep' however again not needed. If you have a look at the #raids-gear-guids it'll show you the best set up you can with your gear, if you need to swap something out just ask.To learn in we recommend using elite void as it means there are less switches for you to master. At the very least you will need a trident, a tent whip, some type of spec weapon preferably a bgs or dwh and a blow pipe. The rest is pretty interchangeable. Any questions just ask.")
     }
 
 
