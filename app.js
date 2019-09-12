@@ -28,8 +28,7 @@ client.on('ready', () => {
 });
 client.on('guildMemberAdd', member => {
     let memberTag = member.user.id;
-    member.guild.channels.get('476526110046420994').send("Welcome to Rs Wanderers! " + "<@" + member.id + ">  Enjoy your stay. <#476707469549371392> - read them and if you have two or more accounts p
-                                                         add them here <#564859524826136615>. Afterwards <#476863150420131840> so we can all get to know you! Mute the channels you don't need to save unwanted notifications & drop a <#476526110046420994> a message if you have what it takes to be in <#609015618426896404>!");
+    member.guild.channels.get('476526110046420994').send("Welcome to Rs Wanderers! " + "<@" + member.id + ">  Enjoy your stay. <#476707469549371392> - read them and if you have two or more accounts please add them here < #564859524826136615>. Afterwards <# 476863150420131840 > so we can all get to know you!Mute the channels you don 't need to save unwanted notifications & drop a <#476526110046420994> a message if you have what it takes to be in <#609015618426896404>!");
     client.guilds.get('564375603952877568').channels.get('564375895645618176').send(member.user.username);
 });
 client.on('guildMemberAdd', (guildMember) => {
@@ -77,10 +76,8 @@ client.on("message", message => {
 
 
     /*if (message.author.id === '369776588469829633') {
-
         if (message.content.includes("")) {
             message.react('🍼');
-
         }
     }*/
 
