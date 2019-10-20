@@ -34,7 +34,7 @@ client.on('guildMemberAdd', member => {
     client.guilds.get('564375603952877568').channels.get('565426431086034949').send(member.user.username);
 });
 client.on('guildMemberAdd', (guildMember) => {
-    guildMember.addRole(guildMember.guild.roles.find(role => role.name === "Recruit"));
+    guildMember.addRole(guildMember.guild.roles.find(role => role.name === "Smiley"));
 });
 
 client.on('guildMemberRemove', member => {
