@@ -144,6 +144,17 @@ client.on("message", message => {
             ]
         });
     }
+    
+        if (message.content === "rip grace") {
+        message.react('614085817165414400');
+
+        message.channel.send("HUMILIATION!!", {
+            files: [
+                "https://i.gyazo.com/1eb46a67a87ccc1760f85563a8954977.png",
+                "./humiliation.mp3"
+            ]
+        });
+    }
 
     if (message.content.includes("thijs")) {
         message.react('569847526338068480');
