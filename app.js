@@ -94,6 +94,13 @@ client.on("message", message => {
             files: ["./julia.jpg"]
         });
     }
+    
+        if (message.content === "callistoKO") {
+
+  message.channel.send("https://www.youtube.com/watch?v=CtYBJrgqwzo");
+    }
+    
+    https://www.youtube.com/watch?v=CtYBJrgqwzo
     if (message.content === "sweetycorns") {
         message.react('🌽');
         message.channel.send({
