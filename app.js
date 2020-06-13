@@ -26,6 +26,11 @@ client.on('ready', () => {
     }, 10000 * 60 * 60);
 
 });
+
+client.on('guildMemberAdd', (guildMember) => {
+    guildMember.addRole(guildMember.guild.roles.find(role => role.name === "Smiley"));
+});
+
 client.on('guildMemberAdd', member => {
     let memberTag = member.user.id;
     
@@ -35,9 +40,7 @@ client.on('guildMemberAdd', member => {
      member.guild.channels.get('476526110046420994').send("Welcome to Rs Wanderers!" + "<@" + member.id + "> <#476863150420131840> so we can all get to know you! Mute the channels you don 't need to save unwanted notifications and enjoy your stay!");
     client.guilds.get('564375603952877568').channels.get('565426431086034949').send(member.user.username);
 });
-client.on('guildMemberAdd', (guildMember) => {
-    guildMember.addRole(guildMember.guild.roles.find(role => role.name === "Smiley"));
-});
+
 
 client.on('guildMemberRemove', member => {
     let memberTag = member.user.id;
