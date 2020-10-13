@@ -95,13 +95,18 @@ client.on("message", message => {
     //             message.react('572331492638851072');
     //         }
     //     }
-    if (message.content === "cooldino") {
-        message.react('572331492638851072');
+//     if (message.content === "cooldino") {
+//         message.react('572331492638851072');
+//         message.channel.send({
+//             files: ["./julia.jpg"]
+//         });
+//     }
+        if (message.content === "what?") {
+       
         message.channel.send({
-            files: ["./julia.jpg"]
+            files: ["./what.jpg"]
         });
     }
-    
         if (message.content === "callistoKO") {
 
   message.channel.send("https://www.youtube.com/watch?v=CtYBJrgqwzo");
