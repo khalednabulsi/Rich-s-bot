@@ -38,17 +38,17 @@ client.on('guildMemberAdd', member => {
     //member.send("In Game Name:\nIRL name:\nYour current rank:\nTotal Level & Construction Level:\nApprox Time in CC:\nScale on 1-10 for game knowledge:\nDo you own a fire cape?\nDo you own barrows gloves?\nDo you own full void, if yes do you have elite?\nDo you own a MA2 cape?\nHow much would a lowered rank affect you personally?\nHave you completed all Grand Master quest (DS2/MM2/SoTE)?\nCoX + ToB kc:\nTime zone:\nHow active are you on discord?\nGreatest CC moment:\nGreatest OSRS achievement:\nAverage weekly playtime:\nApprox date when you started OSRS:\nWould you want to host CC events?")
     //     member.guild.channels.get('476526110046420994').send("Welcome to Rs Wanderers! " + "<@" + member.id + ">  Enjoy your stay. <#476707469549371392> - read them and if you have two or more accounts please add them here <#564859524826136615>. Afterwards <#476863150420131840> so we can all get to know you!Mute the channels you don 't need to save unwanted notifications & drop a <#476526110046420994> a message if you have what it takes to be in <#609015618426896404>!");
      //member.guild.channels.get('476526110046420994').send("Welcome to Rs Wanderers!" + "<@" + member.id + "> <#476863150420131840> so we can all get to know you! Mute the channels you don 't need to save unwanted notifications and enjoy your stay!");
-    member.guild.channels.get('476526110046420994').send("Welcome to Rs Wanderers!" + "<@" + member.id + "> <#476863150420131840> so we can all get to know you! Mute the channels you don't need to save unwanted notifications and have a quick peek and <#476707850400301059>. Please let us know your IRL first name and IGN so one of us can update your discord tag and feel free to <#744855535446392922> yourself for tags you wish to be included in. Enjoy your stay :heart:");
+    member.guild.channels.cache.get('476526110046420994').send("Welcome to Rs Wanderers!" + "<@" + member.id + "> <#476863150420131840> so we can all get to know you! Mute the channels you don't need to save unwanted notifications and have a quick peek and <#476707850400301059>. Please let us know your IRL first name and IGN so one of us can update your discord tag and feel free to <#744855535446392922> yourself for tags you wish to be included in. Enjoy your stay :heart:");
     
-    client.guilds.get('564375603952877568').channels.get('565426431086034949').send(member.user.username);
+    client.guilds.cache.get('564375603952877568').channels.get('565426431086034949').send(member.user.username);
 });
 
 
 client.on('guildMemberRemove', member => {
     let memberTag = member.user.id;
-    member.guild.channels.get('476526110046420994').send('**' + member.user.username + '**, has left the server');
-    client.users.get("418017626615185418").send('**' + member.user.username + '**, has left the server');
-    client.users.get("356888125424795648").send('**' + member.user.username + '**, has left the server');
+    member.guild.channels.cache.get('476526110046420994').send('**' + member.user.username + '**, has left the server');
+    client.users.cache.get("418017626615185418").send('**' + member.user.username + '**, has left the server');
+    client.users.cache.get("356888125424795648").send('**' + member.user.username + '**, has left the server');
 
 });
 
@@ -60,7 +60,7 @@ client.on("message", msg => {
     if (msg.content.toLowerCase().startsWith("clearchat")) {
         async function clear() {
             msg.delete();
-            const fetched = await msg.channel.fetchMessages({
+            const fetched = await msg.channel.messages.fetch({
                 limit: 10
             });
             msg.channel.bulkDelete(fetched);
@@ -133,9 +133,9 @@ client.on("message", message => {
 
         //Filtering the guild members only keeping those with the role
         //Then mapping the filtered array to their usernames
-        let guild = client.guilds.get('476526110046420992'), // returns a Guild or undefined
+        let guild = client.guilds.cache.get('476526110046420992'), // returns a Guild or undefined
             channel;
-        let membersWithRole = client.guilds.get('476526110046420992').members.filter(member => {
+        let membersWithRole = client.guilds.cache.get('476526110046420992').members.filter(member => {
             return member.roles.find("name", roleName);
         }).map(member => {
             return member.displayName;
@@ -227,7 +227,7 @@ client.on("message", message => {
     }
     if (message.content === "!raids req") {
 
-        message.channel.send("80+ combats stats are recommended depending on the group size you are in, you would struggle until 90+ if you plan to do anything under a 4man raid unless the other people with you are max stats and armour to help out with dps. 78 herblore isn't needed but highly suggested as it will help with points while being able to help your team.. Lower than this herblore level means you cannot 'prep' for the boss find rendering yourself slightly useless for 10 or so minutes. Construction level is only needed from 1 member of the team, the medium chest is more than enough but if you have 90 you can make the large for extra points! The higher the farming level you have again, the more useful you are in 'prep' however again not needed. If you have a look at the #raids-gear-guids it'll show you the best set up you can with your gear, if you need to swap something out just ask.To learn in we recommend using elite void as it means there are less switches for you to master. At the very least you will need a trident, a tent whip, some type of spec weapon preferably a bgs or dwh and a blow pipe. The rest is pretty interchangeable. Any questions just ask.")
+        message.channel.cache.send("80+ combats stats are recommended depending on the group size you are in, you would struggle until 90+ if you plan to do anything under a 4man raid unless the other people with you are max stats and armour to help out with dps. 78 herblore isn't needed but highly suggested as it will help with points while being able to help your team.. Lower than this herblore level means you cannot 'prep' for the boss find rendering yourself slightly useless for 10 or so minutes. Construction level is only needed from 1 member of the team, the medium chest is more than enough but if you have 90 you can make the large for extra points! The higher the farming level you have again, the more useful you are in 'prep' however again not needed. If you have a look at the #raids-gear-guids it'll show you the best set up you can with your gear, if you need to swap something out just ask.To learn in we recommend using elite void as it means there are less switches for you to master. At the very least you will need a trident, a tent whip, some type of spec weapon preferably a bgs or dwh and a blow pipe. The rest is pretty interchangeable. Any questions just ask.")
     }
 
 
