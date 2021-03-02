@@ -1,5 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
+// const config = require("./config.json");
 const cron = require('cron');
 
 client.on('ready', () => {
@@ -28,7 +29,7 @@ client.on('ready', () => {
 });
 
 client.on('guildMemberAdd', (guildMember) => {
-    guildMember.addRole(guildMember.guild.roles.find(role => role.name === "Smiley"));
+    guildMember.roles.add(guildMember.guild.roles.cache.find(role => role.name === "Smiley"));
 });
 
 client.on('guildMemberAdd', member => {
@@ -41,7 +42,7 @@ client.on('guildMemberAdd', member => {
      member.guild.channels.cache.get('476526110046420994').send("Welcome to Rs Wanderers!" + "<@" + member.id + "> <#476863150420131840> so we can all get to know you! Mute the channels you don't need to save unwanted notifications and have a quick peek and <#476707850400301059>. Please let us know your IRL first name and IGN so one of us can update your discord tag and feel free to <#744855535446392922> yourself for tags you wish to be included in. Enjoy your stay :heart:");
     
     console.log(member.user.id + ' is in da house');
-    client.guilds.cache.get('564375603952877568').channels.get('565426431086034949').send(member.user.username);
+    client.guilds.cache.get('564375603952877568').channels.cache.get('565426431086034949').send(member.user.username);
 });
 
 
@@ -136,13 +137,14 @@ client.on("message", message => {
         //Then mapping the filtered array to their usernames
         let guild = client.guilds.cache.get('476526110046420992'), // returns a Guild or undefined
             channel;
-        let membersWithRole = client.guilds.cache.get('476526110046420992').members.filter(member => {
-            return member.roles.find("name", roleName);
+        let membersWithRole = client.guilds.cache.get('476526110046420992').members.cache.filter(member => {
+            // return member.roles.find("name", roleName);
+            return member.roles.cache.find(role => role.name == roleName);
         }).map(member => {
             return member.displayName;
         })
 
-        let embed = new Discord.RichEmbed({
+        let embed = new Discord.MessageEmbed({
             "title": `Users with the ${roleName} role`,
             "description": membersWithRole.join("\n"),
             "color": 0xFFFF
@@ -234,3 +236,4 @@ client.on("message", message => {
 
 });
 client.login(process.env.BOT_TOKEN);
+// client.login(config.BOT_TOKEN);
